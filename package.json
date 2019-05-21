@@ -20,11 +20,12 @@
 	"author": "SEP",
 	"license": "ISC",
 	"devDependencies": {
-		"concurrently": "^4.1.0",
 		"pre-commit": "^1.2.2"
 	},
 	"pre-commit": [
 		"lint"
 	],
-	"dependencies": {}
+	"dependencies": {
+		"concurrently": "^4.1.0"
+	}
 }
