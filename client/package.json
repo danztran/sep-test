@@ -3,7 +3,6 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"preinstall": "npm install @vue/cli",
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
 		"lint": "vue-cli-service lint"
@@ -15,6 +14,7 @@
 		"vuex": "^3.0.1"
 	},
 	"devDependencies": {
+		"@vue/cli": "^3.7.0",
 		"@vue/cli-plugin-babel": "^3.7.0",
 		"@vue/cli-plugin-eslint": "^3.7.0",
 		"@vue/cli-service": "^3.7.0",
