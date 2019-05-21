@@ -4,7 +4,7 @@
 	"description": "",
 	"scripts": {
 		"postinstall": "npm run setup",
-		"prestart": "npm run setup && npm run build:client",
+		"prestart": "npm install && npm run build:client",
 		"start": "npm run server",
 		"dev": "concurrently \"npm run client\" \"npm run server\"",
 		"client": "cd client && npm run serve",
