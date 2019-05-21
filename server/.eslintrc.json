@@ -19,7 +19,8 @@
 		"import/no-dynamic-require": "off",
 		"linebreak-style": "off",
 		"array-element-newline": ["error", "consistent"],
-		"global-require": "off"
+		"global-require": "off",
+		"no-tabs": "off"
 	},
 	"parser": "babel-eslint",
 	"globals": {
