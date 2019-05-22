@@ -20,7 +20,9 @@
 		"lint": "concurrently 'npm:lint:*'",
 		"lint:server": "cd server && npm run lint",
 		"lint:client": "cd client && npm run lint",
-		"git:add": "git add ."
+		"git:add": "git add .",
+		"deploy": "git checkout deploy && git merge master",
+		"deploy:at": "git checkout deploy && git cherry-pick"
 	},
 	"pre-commit": [
 		"lint",
