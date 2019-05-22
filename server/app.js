@@ -9,15 +9,23 @@ global.requireWrp = p => require(path.resolve(__dirname, p));
 const router = requireWrp('router');
 const vueRouter = requireWrp('middlewares/vue-router-mdw');
 
+const production = process.env.NODE_ENV === 'production';
+const development = process.env.NODE_ENV === 'development';
+
 const app = express();
 
-app.use(logger('dev'));
+if (development) {
+	app.use(logger('dev'));
+}
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // router
-app.use(express.static(path.join(__dirname, 'vue-dist')));
+if (production) {
+	app.use(express.static(path.join(__dirname, 'vue-dist')));
+}
 app.use(router);
 app.use(vueRouter);
 

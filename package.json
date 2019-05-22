@@ -2,13 +2,16 @@
 	"name": "septest",
 	"version": "1.0.0",
 	"description": "",
+	"engines": {
+		"node": "10.15.3"
+	},
 	"scripts": {
 		"postinstall": "npm run setup",
-		"prestart": "npm install && npm run build:client",
 		"start": "npm run server",
 		"dev": "concurrently \"npm run client\" \"npm run server\"",
 		"client": "cd client && npm run serve",
 		"server": "cd server && npm start",
+		"build": "concurrently 'npm:build:*'",
 		"build:client": "cd client && npm run build",
 		"setup": "concurrently 'npm:setup:*'",
 		"setup:server": "cd server && npm install",
