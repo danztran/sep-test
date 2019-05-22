@@ -1,7 +1,8 @@
 {
 	"name": "septest",
 	"version": "1.0.0",
-	"description": "",
+	"private": true,
+	"author": "SEP",
 	"engines": {
 		"node": "10.15.3"
 	},
@@ -18,16 +19,16 @@
 		"setup:client": "cd client && npm install",
 		"lint": "concurrently 'npm:lint:*'",
 		"lint:server": "cd server && npm run lint",
-		"lint:client": "cd client && npm run lint"
+		"lint:client": "cd client && npm run lint",
+		"git:add": "git add ."
 	},
-	"author": "SEP",
-	"license": "ISC",
+	"pre-commit": [
+		"lint",
+		"git:add"
+	],
 	"devDependencies": {
 		"pre-commit": "^1.2.2"
 	},
-	"pre-commit": [
-		"lint"
-	],
 	"dependencies": {
 		"concurrently": "^4.1.0"
 	}
