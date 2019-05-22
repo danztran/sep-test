@@ -22,7 +22,9 @@
 		"lint:client": "cd client && npm run lint",
 		"git:add": "git add .",
 		"deploy": "git checkout deploy && git merge master",
-		"deploy:at": "git checkout deploy && git cherry-pick"
+		"postdeploy": "git push && git checkout master",
+		"deploy:at": "git checkout deploy && git cherry-pick",
+		"postdeploy:at": "git push && git checkout master"
 	},
 	"pre-commit": [
 		"lint",
