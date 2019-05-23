@@ -9,42 +9,6 @@
 		"@vue/airbnb"
 	],
 	"rules": {
-		"indent": [
-			"error",
-			"tab",
-			{
-				"SwitchCase": 1
-			}
-		],
-		"brace-style": [
-			"error",
-			"stroustrup"
-		],
-		"eol-last": [
-			"error",
-			"always"
-		],
-		"semi": [
-			1,
-			"always"
-		],
-		"space-before-function-paren": [
-			"error",
-			"never"
-		],
-		"comma-dangle": [
-			"error",
-			"never"
-		],
-		"no-unused-vars": [
-			"error"
-		],
-		"no-var": [
-			"error"
-		],
-		"one-var": [
-			"off"
-		],
 		"vue/html-indent": [
 			"error",
 			"tab"
@@ -70,6 +34,25 @@
 				}
 			}
 		],
+		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"brace-style": ["error", "stroustrup"],
+		"eol-last": ["error", "always"],
+		"semi": [1, "always"],
+		"space-before-function-paren": ["error", "never"],
+		"comma-dangle": ["error", "never"],
+		"no-unused-vars": "error",
+		"no-var": "error",
+		"one-var": "off",
+		"import/no-dynamic-require": "off",
+		"import/newline-after-import": "off",
+		"linebreak-style": "off",
+		"array-element-newline": ["error", "consistent"],
+		"global-require": "off",
+		"no-tabs": "off",
+		"no-underscore-dangle": "off",
+		"no-unused-vars": ["error", { "args": "none" }],
+		"object-curly-newline": "off",
+		"no-restricted-syntax": "off",
 		"no-tabs": 0
 	},
 	"parserOptions": {

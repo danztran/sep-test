@@ -17,13 +17,19 @@
 		"no-var": "error",
 		"one-var": "off",
 		"import/no-dynamic-require": "off",
+		"import/newline-after-import": "off",
 		"linebreak-style": "off",
 		"array-element-newline": ["error", "consistent"],
 		"global-require": "off",
-		"no-tabs": "off"
+		"no-tabs": "off",
+		"no-underscore-dangle": "off",
+		"no-unused-vars": ["error", { "args": "none" }],
+		"object-curly-newline": "off",
+		"no-restricted-syntax": "off"
 	},
 	"parser": "babel-eslint",
 	"globals": {
-		"requireWrp": true
+		"requireWrp": true,
+		"__rootdir": true
 	}
 }
