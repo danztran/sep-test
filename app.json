@@ -1,0 +1,43 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "description": "",
+  "env": {
+    "APP_NAME": {
+      "required": true
+    },
+    "MAIN_JS": {
+      "required": true
+    },
+    "NODE_ENV": {
+      "required": true
+    },
+    "PM2_INSTANCES": {
+      "required": true
+    },
+    "PM2_MMR": {
+      "required": true
+    },
+    "SUB_NAME": {
+      "required": true
+    },
+    "VUE_DIST": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "sep-test",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
