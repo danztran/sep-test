@@ -22,7 +22,7 @@
 		"lint:client": "cd client && npm run lint",
 		"git:add": "git add .",
 		"deploy": "git checkout deploy && git pull --rebase && git reset --hard master",
-		"postdeploy": "git push && git checkout master",
+		"postdeploy": "git pull && git push && git checkout master",
 		"deploy:at": "git checkout deploy && git cherry-pick",
 		"postdeploy:at": "git push && git checkout master"
 	},
